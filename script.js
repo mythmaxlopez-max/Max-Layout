@@ -13,7 +13,7 @@ let shitSpeed = 3000;
 let quickerShit = 1.4;
 // intitializing of maximum number of poops
 // spawnPoop fuction will stop once maxPoops is met
-let maxPoops = 500; 
+let maxPoops = 200; 
 // count for poop
 let count = 0;
 
@@ -411,8 +411,8 @@ let count = 0;
 function end(){
 
     setTimeout(() => {
-    maxPoops = 1000000;
-    shitSpeed = 1
+    maxPoops = 400;
+    shitSpeed = 5;
     }, 1000);
     setTimeout(() => {
     $("h4").fadeIn("slow",function(){ 
