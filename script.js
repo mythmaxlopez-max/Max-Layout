@@ -44,7 +44,7 @@ let count = 0;
             left: randomLeft
             });
     //Title and Start button dissapear
-         $(".startButton, .titleCard, h2, h6").fadeOut(function(){
+         $(".startButton, .titleCard, h2").fadeOut(function(){
         });
         $("h3").delay(120*10);
          $("h3").fadeIn(function(){
