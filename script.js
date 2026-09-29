@@ -81,7 +81,7 @@ let count = 0;
 //poop cleaner
     $(document).on("click", ".poop", function(){
         //sound on click
-        var audioSquish = new Audio('images/squish.mp3');
+        var audioSquish = new Audio('images/Squish.mp3');
         audioSquish.play();
         //poop element click will fade out than be removed from DOM
         $(this).fadeOut(150, function(){
