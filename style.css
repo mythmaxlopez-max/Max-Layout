@@ -58,6 +58,8 @@ h3{
             width: 50px; /* Adjust size as needed */
             height: 50px;
     cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .critterContainer img{
@@ -67,6 +69,7 @@ h3{
     top: 0;
     left: 0;
     cursor: pointer;
+-webkit-tap-highlight-color: transparent;
     }
 
 .startupVeil{
