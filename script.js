@@ -1,5 +1,5 @@
 // hide elements
-$("h5, h4, .poop, .startupVeil").hide();
+$(".DEATH, h3, .poop, .startupVeil").hide();
     
 $(".critter1, .critter2, .critter3, .critter4, .critter5, .critter6, .critter7, .critter8, .critter9, .critter10, .critter11, .critter12, .critter13, .critter14, .critter15").hide();
 
@@ -44,13 +44,16 @@ let count = 0;
             left: randomLeft
             });
     //Title and Start button dissapear
-         $(".startButton, h1, h2").fadeOut(function(){
+         $(".startButton, .titleCard, h2, h6").fadeOut(function(){
         });
-         $("h3").delay(120*10);
+        $("h3").delay(120*10);
+         $("h3").fadeIn(function(){
+        });
+         $("h3").delay(120*20);
          $("h3").fadeOut(function(){
         });
     //box waits to reveal itself
-         $(".box1").delay(120*20);
+         $(".box1").delay(120*40);
          $(".box1").fadeIn("slow",function(){
         });
     });
@@ -91,306 +94,306 @@ let count = 0;
         count = count -1;
     });
 
-    // box and critter reveal cycle
+                        // box and critter reveal cycle
 
-    $(".box2").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box3, .critter3").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box2").fadeOut(function(){
-        });
-        $(".box2").delay(120*10);
-        
-        $(".critter2").fadeIn("slow",function(){
-        });
-        $(".box3").delay(120*10);
-        $(".box3").fadeIn("slow",function(){
-        });
-        shitSpeed = shitSpeed / quickerShit;
-        });
+                        $(".box2").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box3, .critter3").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box2").fadeOut(function(){
+                            });
+                            $(".box2").delay(120*10);
+                            
+                            $(".critter2").fadeIn("slow",function(){
+                            });
+                            $(".box3").delay(120*10);
+                            $(".box3").fadeIn("slow",function(){
+                            });
+                            shitSpeed = shitSpeed / quickerShit;
+                            });
 
-    $(".box3").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box4, .critter4").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box3").fadeOut(function(){
-        });
-        $(".box3").delay(120*10);
-        
-        $(".critter3").fadeIn("slow",function(){
-        });
-        $(".box4").delay(120*10);
-        $(".box4").fadeIn("slow",function(){
-        });
-        shitSpeed = shitSpeed -100;
-        });
-        
-    $(".box4").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box5, .critter5").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box4").fadeOut(function(){
-        });
-        $(".box4").delay(120*10);
-        
-        $(".critter4").fadeIn("slow",function(){
-        });
-        $(".box5").delay(120*10);
-        $(".box5").fadeIn("slow",function(){
-        });
-        shitSpeed = shitSpeed / quickerShit;
-        });
+                        $(".box3").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box4, .critter4").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box3").fadeOut(function(){
+                            });
+                            $(".box3").delay(120*10);
+                            
+                            $(".critter3").fadeIn("slow",function(){
+                            });
+                            $(".box4").delay(120*10);
+                            $(".box4").fadeIn("slow",function(){
+                            });
+                            shitSpeed = shitSpeed -100;
+                            });
+                            
+                        $(".box4").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box5, .critter5").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box4").fadeOut(function(){
+                            });
+                            $(".box4").delay(120*10);
+                            
+                            $(".critter4").fadeIn("slow",function(){
+                            });
+                            $(".box5").delay(120*10);
+                            $(".box5").fadeIn("slow",function(){
+                            });
+                            shitSpeed = shitSpeed / quickerShit;
+                            });
 
-    $(".box5").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box6, .critter6").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box5").fadeOut(function(){
-        });
-        $(".box5").delay(120*10);
-        
-        $(".critter5").fadeIn("slow",function(){
-        });
-        $(".box6").delay(120*10);
-        $(".box6").fadeIn("slow",function(){
-        });
-        shitSpeed = shitSpeed / quickerShit;
-        });
+                        $(".box5").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box6, .critter6").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box5").fadeOut(function(){
+                            });
+                            $(".box5").delay(120*10);
+                            
+                            $(".critter5").fadeIn("slow",function(){
+                            });
+                            $(".box6").delay(120*10);
+                            $(".box6").fadeIn("slow",function(){
+                            });
+                            shitSpeed = shitSpeed / quickerShit;
+                            });
 
-    $(".box6").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box7, .critter7").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box6").fadeOut(function(){
-        });
-        $(".box6").delay(120*10);
-        
-        $(".critter6").fadeIn("slow",function(){
-        });
-        $(".box7").delay(120*10);
-        $(".box7").fadeIn("slow",function(){
-        });
-        shitSpeed = shitSpeed / quickerShit;
-        });
+                        $(".box6").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box7, .critter7").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box6").fadeOut(function(){
+                            });
+                            $(".box6").delay(120*10);
+                            
+                            $(".critter6").fadeIn("slow",function(){
+                            });
+                            $(".box7").delay(120*10);
+                            $(".box7").fadeIn("slow",function(){
+                            });
+                            shitSpeed = shitSpeed / quickerShit;
+                            });
 
-    $(".box7").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box8, .critter8").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box7").fadeOut(function(){
-        });
-        $(".box7").delay(120*10);
-        
-        $(".critter7").fadeIn("slow",function(){
-        });
-        $(".box8").delay(120*10);
-        $(".box8").fadeIn("slow",function(){
-        });
-        shitSpeed = shitSpeed / quickerShit;
-        });
+                        $(".box7").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box8, .critter8").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box7").fadeOut(function(){
+                            });
+                            $(".box7").delay(120*10);
+                            
+                            $(".critter7").fadeIn("slow",function(){
+                            });
+                            $(".box8").delay(120*10);
+                            $(".box8").fadeIn("slow",function(){
+                            });
+                            shitSpeed = shitSpeed / quickerShit;
+                            });
 
-    $(".box8").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box9, .critter9").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box8").fadeOut(function(){
-        });
-        $(".box8").delay(120*10);
-        
-        $(".critter8").fadeIn("slow",function(){
-        });
-        $(".box9").delay(120*10);
-        $(".box9").fadeIn("slow",function(){
-        });
-        shitSpeed = shitSpeed / quickerShit;
-        });
+                        $(".box8").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box9, .critter9").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box8").fadeOut(function(){
+                            });
+                            $(".box8").delay(120*10);
+                            
+                            $(".critter8").fadeIn("slow",function(){
+                            });
+                            $(".box9").delay(120*10);
+                            $(".box9").fadeIn("slow",function(){
+                            });
+                            shitSpeed = shitSpeed / quickerShit;
+                            });
 
-    $(".box9").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box10, .critter10").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box9").fadeOut(function(){
-        });
-        $(".box9").delay(120*10);
-        
-        $(".critter9").fadeIn("slow",function(){
-        });
-        $(".box10").delay(120*10);
-        $(".box10").fadeIn("slow",function(){
-        });
-        shitSpeed = shitSpeed / quickerShit;
-        });
+                        $(".box9").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box10, .critter10").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box9").fadeOut(function(){
+                            });
+                            $(".box9").delay(120*10);
+                            
+                            $(".critter9").fadeIn("slow",function(){
+                            });
+                            $(".box10").delay(120*10);
+                            $(".box10").fadeIn("slow",function(){
+                            });
+                            shitSpeed = shitSpeed / quickerShit;
+                            });
 
-    $(".box10").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box11, .critter11").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box10").fadeOut(function(){
-        });
-        $(".box10").delay(120*10);
-        
-        $(".critter10").fadeIn("slow",function(){
-        });
-        $(".box11").delay(120*10);
-        $(".box11").fadeIn("slow",function(){
-        });
-        shitSpeed = shitSpeed / quickerShit;
-        });
+                        $(".box10").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box11, .critter11").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box10").fadeOut(function(){
+                            });
+                            $(".box10").delay(120*10);
+                            
+                            $(".critter10").fadeIn("slow",function(){
+                            });
+                            $(".box11").delay(120*10);
+                            $(".box11").fadeIn("slow",function(){
+                            });
+                            shitSpeed = shitSpeed / quickerShit;
+                            });
 
-    $(".box11").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box12, .critter12").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box11").fadeOut(function(){
-        });
-        $(".box11").delay(120*10);
-        
-        $(".critter11").fadeIn("slow",function(){
-        });
-        $(".box12").delay(120*10);
-        $(".box12").fadeIn("slow",function(){
-        });
-       shitSpeed = shitSpeed / quickerShit;
-        });
+                        $(".box11").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box12, .critter12").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box11").fadeOut(function(){
+                            });
+                            $(".box11").delay(120*10);
+                            
+                            $(".critter11").fadeIn("slow",function(){
+                            });
+                            $(".box12").delay(120*10);
+                            $(".box12").fadeIn("slow",function(){
+                            });
+                        shitSpeed = shitSpeed / quickerShit;
+                            });
 
-    $(".box12").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box13, .critter13").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box12").fadeOut(function(){
-        });
-        $(".box12").delay(120*10);
-        
-        $(".critter12").fadeIn("slow",function(){
-        });
-        $(".box13").delay(120*10);
-        $(".box13").fadeIn("slow",function(){
-        });
-        shitSpeed = shitSpeed / quickerShit;
-        });
+                        $(".box12").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box13, .critter13").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box12").fadeOut(function(){
+                            });
+                            $(".box12").delay(120*10);
+                            
+                            $(".critter12").fadeIn("slow",function(){
+                            });
+                            $(".box13").delay(120*10);
+                            $(".box13").fadeIn("slow",function(){
+                            });
+                            shitSpeed = shitSpeed / quickerShit;
+                            });
 
-    $(".box13").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box14, .critter14").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box13").fadeOut(function(){
-        });
-        $(".box13").delay(120*10);
-        
-        $(".critter13").fadeIn("slow",function(){
-        });
-        $(".box14").delay(120*10);
-        $(".box14").fadeIn("slow",function(){
-        });
-        shitSpeed = shitSpeed / quickerShit;
-        });
+                        $(".box13").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box14, .critter14").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box13").fadeOut(function(){
+                            });
+                            $(".box13").delay(120*10);
+                            
+                            $(".critter13").fadeIn("slow",function(){
+                            });
+                            $(".box14").delay(120*10);
+                            $(".box14").fadeIn("slow",function(){
+                            });
+                            shitSpeed = shitSpeed / quickerShit;
+                            });
 
-    $(".box14").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box15, .critter15").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box14").fadeOut(function(){
-        });
-        $(".box14").delay(120*10);
-        
-        $(".critter14").fadeIn("slow",function(){
-        });
-        $(".box15").delay(120*10);
-        $(".box15").fadeIn("slow",function(){
-        });
-        shitSpeed = shitSpeed / quickerShit;
-        });
+                        $(".box14").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box15, .critter15").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box14").fadeOut(function(){
+                            });
+                            $(".box14").delay(120*10);
+                            
+                            $(".critter14").fadeIn("slow",function(){
+                            });
+                            $(".box15").delay(120*10);
+                            $(".box15").fadeIn("slow",function(){
+                            });
+                            shitSpeed = shitSpeed / quickerShit;
+                            });
 
-    $(".box15").on("click", function(){
-        var audioYay = new Audio('images/yay.mp3');
-        audioYay.play();
-            const randomLeft = Math.floor(Math.random() * maxLeft);
-            const randomTop = Math.floor(Math.random() * maxTop);
-            $(".box16, .critter16").css({
-            top: randomTop,
-            left: randomLeft
-            });
-        $(".box15").fadeOut(function(){
-        });
-        $(".box15").delay(120*10);
-        
-        $(".critter15").fadeIn("slow",function(){
-        });
+                        $(".box15").on("click", function(){
+                            var audioYay = new Audio('images/yay.mp3');
+                            audioYay.play();
+                                const randomLeft = Math.floor(Math.random() * maxLeft);
+                                const randomTop = Math.floor(Math.random() * maxTop);
+                                $(".box16, .critter16").css({
+                                top: randomTop,
+                                left: randomLeft
+                                });
+                            $(".box15").fadeOut(function(){
+                            });
+                            $(".box15").delay(120*10);
+                            
+                            $(".critter15").fadeIn("slow",function(){
+                            });
 
-        end();
-        /*$(".box16").delay(120*10);
-        $(".box16").fadeIn("slow",function(){
-        });
-        $(".endButton").delay(120*10);
-         $(".endButton").fadeIn("slow",function(){
-         });
-        shitSpeed = shitSpeed / quickerShit; */
-        });
+                            end();
+                            /*$(".box16").delay(120*10);
+                            $(".box16").fadeIn("slow",function(){
+                            });
+                            $(".endButton").delay(120*10);
+                            $(".endButton").fadeIn("slow",function(){
+                            });
+                            shitSpeed = shitSpeed / quickerShit; */
+                            });
 
 // End Sequence
 
@@ -415,13 +418,9 @@ function end(){
     shitSpeed = 5;
     }, 1000);
     setTimeout(() => {
-    $("h4").fadeIn("slow",function(){ 
+    $(".DEATH").fadeIn(function(){
     });
     }, 6000);
-    setTimeout(() => {
-    $("h5").fadeIn("slow",function(){ 
-    });
-    }, 8000);
 
     setTimeout(() => {
     location.reload(); //game reloads itself
