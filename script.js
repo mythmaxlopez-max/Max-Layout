@@ -439,10 +439,13 @@ function startPooping(){
 
             const img = document.createElement("img");
             img.src = 'images/dogfancy.gif';
+
                 // unique src forces its own independent animation timeline
                 img.src = 'images/dogfancy.gif?spawn=' + Date.now() + '-' +count;
             //adds the next poop as an image element 
             img.classList.add("poop");
+            img.draggable = false;
+
             //Initialize and play poop noise
             var audioPoop = new Audio('images/poop.mp3');
             audioPoop.play();
